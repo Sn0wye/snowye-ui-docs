@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import {
-  Back,
   Dropdown,
   Item,
   Links,
@@ -50,7 +49,6 @@ export const Header = ({ links }: HeaderProps) => {
               </Item>
             ))}
           </Dropdown>
-          <Back onClick={toggleOpen} />
         </>
       )}
     </>

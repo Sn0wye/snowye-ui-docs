@@ -50,8 +50,8 @@ function App() {
 
       <Wrapper>
         <Title>
-          React Powered <Highlight>Component UI</Highlight>, accessible by
-          default and built on top of{' '}
+          <Highlight>React Powered</Highlight> Component UI,{' '}
+          <Highlight>accessible</Highlight> by default and built on top of{' '}
           <Highlight as='a' href='https://www.radix-ui.com/' target='_blank'>
             Radix
           </Highlight>

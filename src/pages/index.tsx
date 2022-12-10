@@ -38,7 +38,7 @@ function App() {
       <Header
         links={[
           {
-            href: 'https://snowye-ui.snowye.dev/docs',
+            href: '/docs',
             label: 'Documentation'
           },
           {

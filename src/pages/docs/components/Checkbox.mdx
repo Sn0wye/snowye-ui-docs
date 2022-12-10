@@ -1,6 +1,7 @@
 import { CheckboxDemo } from '../../../demos/CheckboxDemo.tsx';
 import { HeroContainer } from '../../../components/HeroContainer.tsx';
 import { PropsTable } from '../../../components/PropsTable';
+import { Code } from '../../../components/Code';
 
 # Checkbox
 
@@ -55,8 +56,9 @@ Contains all parts of the Checkbox.
       required: false,
       type: 'boolean',
       default: 'false',
-      description:
-        'The controlled checked state of the checkbox. Must be used in conjunction with `onCheckedChange`.'
+      description: (
+        <p>The controlled checked state of the checkbox. Must be used in conjunction with <Code>onCheckedChange</Code>.</p>
+      ) 
     },
     {
       name: 'onCheckedChange',
@@ -71,16 +73,18 @@ Contains all parts of the Checkbox.
       required: false,
       type: 'boolean',
       default: 'false',
-      description:
-        'When `true`, prevents the user from interacting with the checkbox.'
+      description: (
+        <p>When <Code>true</Code>, prevents the user from interacting with the checkbox.</p>
+      )
     },
     {
       name: 'required',
       required: false,
       type: 'boolean',
       default: 'false',
-      description:
-        'When `true`, indicates that the user must check the checkbox before the owning form can be submitted.'
+      description: (
+        <p>When <Code>true</Code>, indicates that the user must check the checkbox before the owning form can be submitted.</p>
+      )
     }
 ]}
 />

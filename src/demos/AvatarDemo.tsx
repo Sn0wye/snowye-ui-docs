@@ -16,7 +16,7 @@ export const AvatarDemo = () => {
         <Avatar.Fallback></Avatar.Fallback>
       </Avatar>
       <Avatar src={undefined}>
-        <Avatar.Fallback>GT</Avatar.Fallback>
+        <Avatar.Fallback>JD</Avatar.Fallback>
       </Avatar>
     </Box>
   );

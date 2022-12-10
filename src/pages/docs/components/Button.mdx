@@ -1,6 +1,8 @@
 import { ButtonDemo } from '../../../demos/ButtonDemo.tsx';
 import { HeroContainer } from '../../../components/HeroContainer.tsx';
 import { PropsTable } from '../../../components/PropsTable';
+import { Surface, Button } from '@snowye-ui/react';
+import { ArrowRight } from 'phosphor-react';
 
 # Button
 
@@ -25,6 +27,100 @@ import { Button } from '@snowye-ui/react';
 <HeroContainer>
   <ButtonDemo />
 </HeroContainer>
+
+## Variants
+
+Use the `variant` prop to change visual styles of the Button. You can set the value to `primary`, `secondary`, `tertiart` or `danger`.
+
+<HeroContainer>
+  <Surface 
+    css={{
+      display: 'flex',
+      gap: '$4'
+    }}
+  >
+    <Button variant='primary'>Primary</Button>
+    <Button variant='secondary'>Secondary</Button>
+    <Button variant='tertiary'>Tertiary</Button>
+    <Button variant='danger'>Danger</Button>
+  </Surface>
+</HeroContainer>
+
+```tsx
+<Surface 
+  css={{
+    display: 'flex',
+    gap: '$4'
+  }}
+>
+  <Button variant='primary'>Primary</Button>
+  <Button variant='secondary'>Secondary</Button>
+  <Button variant='tertiary'>Tertiary</Button>
+  <Button variant='danger'>Danger</Button>
+</Surface>
+```
+
+## Button Sizes
+
+Use the `size` prop to change the size of the button. You can set the value to `sm`, `md`, or `lg`.
+
+<HeroContainer>
+  <Surface 
+    css={{
+      display: 'flex',
+      gap: '$4',
+      alignItems: 'center'
+    }}
+  >
+    <Button size='sm'>Small</Button>
+    <Button size='md'>Medium</Button>
+    <Button size='lg'>Large</Button>
+  </Surface>
+</HeroContainer>
+
+```tsx
+<Surface 
+  css={{
+    display: 'flex',
+    gap: '$4',
+    alignItems: 'center'
+  }}
+>
+  <Button size='sm'>Small</Button>
+  <Button size='md'>Medium</Button>
+  <Button size='lg'>Large</Button>
+</Surface>
+```
+
+## States
+
+<HeroContainer>
+  <Surface 
+    css={{
+      display: 'flex',
+      gap: '$4',
+      width: '80%'
+    }}
+  >
+    <Button loading>Loading</Button>
+    <Button disabled>Disabled</Button>
+    <Button full>Full</Button>
+  </Surface>
+</HeroContainer>
+
+```tsx
+<Surface 
+  css={{
+    display: 'flex',
+    gap: '$4',
+    width: '80%'
+  }}
+>
+  <Button loading>Loading</Button>
+  <Button disabled>Disabled</Button>
+  <Button full>Full</Button>
+</Surface>
+```
 
 ## API Reference
 

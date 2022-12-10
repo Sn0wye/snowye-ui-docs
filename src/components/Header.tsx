@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import { List } from 'phosphor-react';
-import { useState } from 'react';
-import Icon from '../../public/favicon.svg';
-import styles from './Header.module.scss';
+import Image from "next/image";
+import { List } from "phosphor-react";
+import { useState } from "react";
+import Icon from "../../public/favicon.svg";
+import styles from "./Header.module.scss";
 
 type Link = {
   href?: string;
@@ -19,16 +19,16 @@ function Header({ links }: { links: Link[] }) {
         <Image
           className={styles.icon}
           src={Icon}
-          alt='Favicon'
+          alt="Favicon"
           width={45}
           height={45}
           onClick={() => {
-            window.location.href = '/';
+            window.location.href = "/";
           }}
         />
 
         <div className={styles.menu}>
-          {links.map(link => {
+          {links.map((link) => {
             return (
               <div className={styles.dropdown} key={link.label}>
                 <span
@@ -55,7 +55,7 @@ function Header({ links }: { links: Link[] }) {
       {isOpen && (
         <>
           <div className={styles.mobile}>
-            {links.map(link => {
+            {links.map((link) => {
               return (
                 <span
                   key={link.label}

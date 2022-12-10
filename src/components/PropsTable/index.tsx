@@ -1,42 +1,42 @@
-import { AccessibleIcon } from '@radix-ui/react-accessible-icon';
-import { Box, IconButton, Popover, Text } from '@snowye-ui/react';
-import { Info } from 'phosphor-react';
-import { styled } from '../../styles/stitches';
-import { DividerHorizontalIcon } from './DividerHorizontal';
-import { RegionTable } from './RegionTable';
+import { AccessibleIcon } from "@radix-ui/react-accessible-icon";
+import { Box, IconButton, Popover, Text } from "@snowye-ui/react";
+import { Info } from "phosphor-react";
+import { styled } from "../../styles/stitches";
+import { DividerHorizontalIcon } from "./DividerHorizontal";
+import { RegionTable } from "./RegionTable";
 
-const Td = styled('td', {
-  boxSizing: 'border-box',
-  py: '$3',
-  pr: '$4',
-  whiteSpace: 'nowrap',
-  height: 56
+const Td = styled("td", {
+  boxSizing: "border-box",
+  py: "$3",
+  pr: "$4",
+  whiteSpace: "nowrap",
+  height: 56,
 });
 
-export const Code = styled('code', {
-  fontFamily: 'Fira Code',
-  fontSize: '$md',
-  whiteSpace: 'nowrap',
-  padding: '0 3px 2px 3px',
+export const Code = styled("code", {
+  fontFamily: "Fira Code",
+  fontSize: "$md",
+  whiteSpace: "nowrap",
+  padding: "0 3px 2px 3px",
   borderRadius: 0,
   margin: 0,
-  height: '$6',
+  height: "$6",
 
   variants: {
     variant: {
       gray: {
-        backgroundColor: '$gray800',
-        color: '$gray400'
+        backgroundColor: "$gray800",
+        color: "$gray400",
       },
       violet: {
-        backgroundColor: '#251e40',
-        color: '#9e8cfc'
-      }
-    }
+        backgroundColor: "#251e40",
+        color: "#9e8cfc",
+      },
+    },
   },
   defaultVariants: {
-    variant: 'violet'
-  }
+    variant: "violet",
+  },
 });
 
 type Data = {
@@ -50,65 +50,65 @@ type Data = {
 
 interface Props {
   data: Data[];
-  'aria-label'?: string;
-  'aria-labelledby'?: string;
+  "aria-label"?: string;
+  "aria-labelledby"?: string;
 }
 
 export const PropsTable = ({
   data,
-  'aria-label': ariaLabel,
-  'aria-labelledby': ariaLabelledBy
+  "aria-label": ariaLabel,
+  "aria-labelledby": ariaLabelledBy,
 }: Props) => {
   const hasAriaLabel = !!(ariaLabel || ariaLabelledBy);
   return (
     <RegionTable
       css={{
-        width: '100%',
-        textAlign: 'left',
-        borderCollapse: 'collapse',
-        whiteSpace: 'nowrap'
+        width: "100%",
+        textAlign: "left",
+        borderCollapse: "collapse",
+        whiteSpace: "nowrap",
       }}
-      aria-label={hasAriaLabel ? ariaLabel : 'Component Props'}
+      aria-label={hasAriaLabel ? ariaLabel : "Component Props"}
       aria-labelledby={ariaLabelledBy}
     >
       <thead>
         <tr>
           <Box
-            as='th'
+            as="th"
             css={{
-              borderBottom: '1px solid $gray600',
-              py: '$3',
-              pr: '$4',
-              width: '45%'
+              borderBottom: "1px solid $gray600",
+              py: "$3",
+              pr: "$4",
+              width: "45%",
             }}
           >
-            <Text size='sm' css={{ color: '$gray200' }}>
+            <Text size="sm" css={{ color: "$gray200" }}>
               Prop
             </Text>
           </Box>
           <Box
-            as='th'
+            as="th"
             css={{
-              borderBottom: '1px solid $gray600',
-              py: '$3',
-              pr: '$4',
-              width: '27.5%'
+              borderBottom: "1px solid $gray600",
+              py: "$3",
+              pr: "$4",
+              width: "27.5%",
             }}
           >
-            <Text size='sm' css={{ color: '$gray200' }}>
+            <Text size="sm" css={{ color: "$gray200" }}>
               Type
             </Text>
           </Box>
           <Box
-            as='th'
+            as="th"
             css={{
-              borderBottom: '1px solid $gray600',
-              py: '$3',
-              pr: '$4',
-              width: '27.5%'
+              borderBottom: "1px solid $gray600",
+              py: "$3",
+              pr: "$4",
+              width: "27.5%",
             }}
           >
-            <Text size='sm' css={{ color: '$gray200' }}>
+            <Text size="sm" css={{ color: "$gray200" }}>
               Default
             </Text>
           </Box>
@@ -123,63 +123,63 @@ export const PropsTable = ({
               typeSimple,
               required,
               default: defaultValue,
-              description
+              description,
             },
             i
           ) => (
             <tr key={`${name}-${i}`}>
               <Td
                 css={{
-                  borderBottom: '1px solid $gray600',
-                  whiteSpace: 'nowrap'
+                  borderBottom: "1px solid $gray600",
+                  whiteSpace: "nowrap",
                 }}
               >
                 <Code
                   css={{
-                    display: 'inline-block',
-                    verticalAlign: 'middle'
+                    display: "inline-block",
+                    verticalAlign: "middle",
                   }}
                 >
                   {name}
-                  {required ? '*' : null}
+                  {required ? "*" : null}
                 </Code>
                 {description && (
                   <Popover.Root>
                     <Popover.Trigger asChild>
                       <IconButton
-                        size='xs'
-                        variant='tertiary'
+                        size="xs"
+                        variant="tertiary"
                         css={{
-                          display: 'inline-flex',
-                          verticalAlign: 'middle',
+                          display: "inline-flex",
+                          verticalAlign: "middle",
                           bottom: 0,
-                          ml: '$1',
-                          color: '$gray200'
+                          ml: "$1",
+                          color: "$gray200",
                         }}
                       >
-                        <AccessibleIcon label='Prop description'>
+                        <AccessibleIcon label="Prop description">
                           <Info size={16} />
                         </AccessibleIcon>
                       </IconButton>
                     </Popover.Trigger>
                     <Popover.Content
                       css={{
-                        maxWidth: 'max-content',
-                        py: '$2',
-                        px: '$3',
-                        fontFamily: 'Untitled Sans !important'
+                        maxWidth: "max-content",
+                        py: "$2",
+                        px: "$3",
+                        fontFamily: "Untitled Sans !important",
                       }}
                       hideClose
-                      side='top'
-                      onOpenAutoFocus={event => {
+                      side="top"
+                      onOpenAutoFocus={(event) => {
                         event.preventDefault();
                         (event.currentTarget as HTMLElement)?.focus();
                       }}
                     >
                       <Text
-                        size='md'
+                        size="md"
                         css={{
-                          lineHeight: '20px'
+                          lineHeight: "20px",
                         }}
                       >
                         {description}
@@ -190,17 +190,17 @@ export const PropsTable = ({
               </Td>
               <Td
                 css={{
-                  borderBottom: '1px solid $gray600'
+                  borderBottom: "1px solid $gray600",
                 }}
               >
                 <Code
                   css={{
-                    borderColor: '$gray700',
-                    color: '$gray200',
-                    display: 'inline-block',
-                    verticalAlign: 'middle'
+                    borderColor: "$gray700",
+                    color: "$gray200",
+                    display: "inline-block",
+                    verticalAlign: "middle",
                   }}
-                  variant='gray'
+                  variant="gray"
                 >
                   {Boolean(typeSimple) ? typeSimple : type}
                 </Code>
@@ -208,26 +208,26 @@ export const PropsTable = ({
                   <Popover.Root>
                     <Popover.Trigger asChild>
                       <IconButton
-                        size='xs'
-                        variant='tertiary'
+                        size="xs"
+                        variant="tertiary"
                         css={{
-                          ml: '$1',
-                          color: '$gray200',
-                          display: 'inline-flex',
-                          verticalAlign: 'middle'
+                          ml: "$1",
+                          color: "$gray200",
+                          display: "inline-flex",
+                          verticalAlign: "middle",
                         }}
                       >
-                        <AccessibleIcon label='See full type'>
+                        <AccessibleIcon label="See full type">
                           <Info size={16} />
                         </AccessibleIcon>
                       </IconButton>
                     </Popover.Trigger>
                     <Popover.Content
-                      side='top'
+                      side="top"
                       css={{
-                        width: '100%',
-                        py: '$2',
-                        px: '$3'
+                        width: "100%",
+                        py: "$2",
+                        px: "$3",
                       }}
                       hideClose
                     >
@@ -238,21 +238,21 @@ export const PropsTable = ({
               </Td>
               <Td
                 css={{
-                  borderBottom: '1px solid $gray600'
+                  borderBottom: "1px solid $gray600",
                 }}
               >
                 {Boolean(defaultValue) ? (
                   <Code
-                    css={{ bc: '$gray700', color: '$gray200' }}
-                    variant='gray'
+                    css={{ bc: "$gray700", color: "$gray200" }}
+                    variant="gray"
                   >
                     {defaultValue}
                   </Code>
                 ) : (
                   <Box
                     as={AccessibleIcon}
-                    label='No default value'
-                    css={{ color: '$gray500' }}
+                    label="No default value"
+                    css={{ color: "$gray500" }}
                   >
                     <DividerHorizontalIcon />
                   </Box>

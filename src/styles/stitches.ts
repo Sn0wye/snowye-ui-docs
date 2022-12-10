@@ -5,13 +5,13 @@ import {
   fontWeights,
   lineHeights,
   radii,
-  space
-} from '@snowye-ui/tokens';
+  space,
+} from "@snowye-ui/tokens";
 import {
   createStitches,
   CSS as StitchesCSS,
-  defaultThemeMap
-} from '@stitches/react';
+  defaultThemeMap,
+} from "@stitches/react";
 
 type PossibleValues = number | string;
 
@@ -23,12 +23,12 @@ export const {
   getCssText,
   theme,
   createTheme,
-  config
+  config,
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
-    height: 'space',
-    width: 'space'
+    height: "space",
+    width: "space",
   },
 
   theme: {
@@ -38,74 +38,74 @@ export const {
     radii,
     lineHeights,
     space,
-    fonts
+    fonts,
   },
   utils: {
     m: (value: PossibleValues) => ({
-      margin: value
+      margin: value,
     }),
     mt: (value: PossibleValues) => ({
-      marginTop: value
+      marginTop: value,
     }),
     mr: (value: PossibleValues) => ({
-      marginRight: value
+      marginRight: value,
     }),
     mb: (value: PossibleValues) => ({
-      marginBottom: value
+      marginBottom: value,
     }),
     ml: (value: PossibleValues) => ({
-      marginLeft: value
+      marginLeft: value,
     }),
     mx: (value: PossibleValues) => ({
       marginLeft: value,
-      marginRight: value
+      marginRight: value,
     }),
     my: (value: PossibleValues) => ({
       marginTop: value,
-      marginBottom: value
+      marginBottom: value,
     }),
     p: (value: PossibleValues) => ({
-      padding: value
+      padding: value,
     }),
     pt: (value: PossibleValues) => ({
-      paddingTop: value
+      paddingTop: value,
     }),
     pr: (value: PossibleValues) => ({
-      paddingRight: value
+      paddingRight: value,
     }),
     pb: (value: PossibleValues) => ({
-      paddingBottom: value
+      paddingBottom: value,
     }),
     pl: (value: PossibleValues) => ({
-      paddingLeft: value
+      paddingLeft: value,
     }),
     px: (value: PossibleValues) => ({
       paddingLeft: value,
-      paddingRight: value
+      paddingRight: value,
     }),
     py: (value: PossibleValues) => ({
       paddingTop: value,
-      paddingBottom: value
+      paddingBottom: value,
     }),
 
     size: (value: PossibleValues) => ({
       width: value,
-      height: value
-    })
-  }
+      height: value,
+    }),
+  },
 });
 
 const globalStyle = globalCss({
   body: {
-    backgroundColor: '#121214',
-    color: '#fff',
-    fontFamily: 'Raleway, sans-serif',
-    margin: 0
+    backgroundColor: "#121214",
+    color: "#fff",
+    fontFamily: "Raleway, sans-serif",
+    margin: 0,
   },
 
-  '.xterm-viewport::-webkit-scrollbar': {
-    display: 'none'
-  }
+  ".xterm-viewport::-webkit-scrollbar": {
+    display: "none",
+  },
 });
 
 globalStyle();

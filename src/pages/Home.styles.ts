@@ -93,7 +93,7 @@ export const Stats = styled('div', {
   gap: '$6',
   margin: '0 auto',
 
-  '@media (max-width: 1100px)': {
+  '@media (max-width: 700px)': {
     marginTop: '$3',
     flexDirection: 'column',
     gap: '$4'

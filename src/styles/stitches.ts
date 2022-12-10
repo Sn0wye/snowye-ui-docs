@@ -95,4 +95,19 @@ export const {
   }
 });
 
+const globalStyle = globalCss({
+  body: {
+    backgroundColor: '#121214',
+    color: '#fff',
+    fontFamily: 'Raleway, sans-serif',
+    margin: 0
+  },
+
+  '.xterm-viewport::-webkit-scrollbar': {
+    display: 'none'
+  }
+});
+
+globalStyle();
+
 export type CSS = StitchesCSS<typeof config>;

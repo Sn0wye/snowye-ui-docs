@@ -96,6 +96,11 @@ export const {
 });
 
 const globalStyle = globalCss({
+  '*': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box'
+  },
   body: {
     backgroundColor: '#121214',
     color: '#fff',

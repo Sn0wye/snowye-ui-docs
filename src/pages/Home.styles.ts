@@ -1,18 +1,22 @@
 import { styled } from '../styles/stitches';
 
+export const Wrapper = styled('div', {
+  padding: '0 $6'
+});
+
 export const Title = styled('h1', {
   textAlign: 'center',
   margin: '0 25%',
-  marginTop: '50px',
+  marginTop: '$12',
   marginBottom: '30px',
   fontSize: '40px',
 
   '@media (max-width: 500px)': {
-    margin: '50px 0'
+    margin: '$12 0'
   },
 
   '@media (max-width: 600px)': {
-    margin: '50px 5%'
+    margin: '$12 $6'
   }
 });
 
@@ -81,11 +85,15 @@ export const Copy = styled('button', {
 });
 
 export const Community = styled('div', {
-  marginTop: '50px',
-  textAlign: 'center',
+  marginTop: '$12',
+  marginBottom: '$12',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center'
+  alignItems: 'center',
+
+  h1: {
+    marginBottom: '$8'
+  }
 });
 
 export const Stats = styled('div', {

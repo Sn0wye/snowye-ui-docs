@@ -11,7 +11,8 @@ import {
   Download,
   Highlight,
   Stats,
-  Title
+  Title,
+  Wrapper
 } from './Home.styles';
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
         ]}
       />
 
-      <div>
+      <Wrapper>
         <Title>
           React Powered <Highlight>Component UI</Highlight>, accessible by
           default and built on top of{' '}
@@ -94,7 +95,7 @@ function App() {
             </Card>
           </Stats>
         </Community>
-      </div>
+      </Wrapper>
     </>
   );
 }

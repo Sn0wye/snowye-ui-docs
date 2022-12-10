@@ -40,7 +40,13 @@ Use the `variant` prop to change visual styles of the Button. You can set the va
   <Surface 
     css={{
       display: 'flex',
-      gap: '$4'
+      gap: '$4',
+
+      '@media (max-width: 768px)': {
+        flexWrap: 'wrap',
+        width: '80%',
+        justifyContent: 'center',
+      }
     }}
   >
     <Button variant='primary'>Primary</Button>

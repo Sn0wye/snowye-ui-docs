@@ -2,6 +2,8 @@
   "index": "Introduction",
   "overview": "Overview",
   "components": "Components",
+  "layout": "Layout",
+  "tokens": "Tokens",
   "contact": {
     "title": "Contact ↗",
     "type": "page",

@@ -17,6 +17,11 @@ const config: DocsThemeConfig = {
   darkMode: false,
   nextThemes: {
     forcedTheme: 'dark'
+  },
+  useNextSeoProps: () => {
+    return {
+      titleTemplate: '%s - Snowye UI'
+    };
   }
 };
 

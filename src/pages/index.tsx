@@ -21,12 +21,12 @@ function App() {
   const [isCopyClicked, setIsCopyClicked] = useState(false);
 
   useEffect(() => {
-    // fetch('https://api.github.com/repos/Sn0wye/snowye-ui')
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     setStars(data.stargazers_count);
-    //     setForks(data.forks_count);
-    //   });
+    fetch('https://api.github.com/repos/Sn0wye/snowye-ui')
+      .then(res => res.json())
+      .then(data => {
+        setStars(data.stargazers_count);
+        setForks(data.forks_count);
+      });
   }, []);
 
   return (

@@ -69,8 +69,7 @@ export const Item = styled('a', {
   textDecoration: 'none',
   paddingBottom: '5px',
   color: 'inherit',
-  background:
-    'linear-gradient(to right, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)), linear-gradient(to right, #ed5c66, #f28099)',
+  background: 'linear-gradient(135deg, #8A2EFF, #CCE0FF)',
   backgroundSize: '100% 0.1em, 0 0.1em',
   backgroundPosition: '100% 100%, 0 100%',
   backgroundRepeat: 'no-repeat',

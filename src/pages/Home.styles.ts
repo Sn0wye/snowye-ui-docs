@@ -21,7 +21,7 @@ export const Title = styled('h1', {
 });
 
 export const Highlight = styled('span', {
-  background: 'linear-gradient(269.99deg, #ed5c66, #f28099)',
+  background: 'linear-gradient(135deg, #8A2EFF, #CCE0FF)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   backgroundClip: 'text'
@@ -59,13 +59,13 @@ export const Code = styled('code', {
 });
 
 export const Copy = styled('button', {
-  boxShadow: '0px 6px 21px 1px #ed5c662a',
+  boxShadow: '0px 6px 21px 1px #8A2EFF2A',
   backgroundClip: 'text',
   display: 'flex',
   alignItems: 'center',
   border: 'none',
   padding: '$5 $7',
-  background: 'linear-gradient(269.99deg, #ed5c66, #f28099)',
+  background: 'linear-gradient(135deg, #8A2EFF, #CCE0FF)',
   fontSize: '18px',
   cursor: 'pointer',
   borderRadius: '5px',
@@ -121,6 +121,6 @@ export const Card = styled('div', {
 
   strong: {
     fontSize: '42px',
-    color: '#f28099'
+    color: '#8A2EFF'
   }
 });

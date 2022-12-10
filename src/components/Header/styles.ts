@@ -69,7 +69,7 @@ export const Item = styled('a', {
   textDecoration: 'none',
   paddingBottom: '5px',
   color: 'inherit',
-  background: 'linear-gradient(135deg, #8A2EFF, #CCE0FF)',
+  background: 'linear-gradient(135deg, #9942FE, #3378FF)',
   backgroundSize: '100% 0.1em, 0 0.1em',
   backgroundPosition: '100% 100%, 0 100%',
   backgroundRepeat: 'no-repeat',

@@ -13,7 +13,7 @@ import {
   Stats,
   Title,
   Wrapper
-} from './Home.styles';
+} from '../styles/Home.styles';
 
 function App() {
   const [stars, setStars] = useState<number>(2);

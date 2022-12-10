@@ -1,7 +1,7 @@
-import Head from "next/head";
-import { Check } from "phosphor-react";
-import { useEffect, useState } from "react";
-import { Header } from "../components/Header";
+import Head from 'next/head';
+import { Check } from 'phosphor-react';
+import { useEffect, useState } from 'react';
+import { Header } from '../components/Header';
 import {
   Card,
   Code,
@@ -11,8 +11,8 @@ import {
   Download,
   Highlight,
   Stats,
-  Title,
-} from "./Home.styles";
+  Title
+} from './Home.styles';
 
 function App() {
   const [stars, setStars] = useState<number>(2);
@@ -37,21 +37,21 @@ function App() {
       <Header
         links={[
           {
-            href: "https://snowye-ui.snowye.dev/docs",
-            label: "Documentation",
+            href: 'https://snowye-ui.snowye.dev/docs',
+            label: 'Documentation'
           },
           {
-            href: "https://github.com/Sn0wye/snowye-ui",
-            label: "GitHub",
-          },
+            href: 'https://github.com/Sn0wye/snowye-ui',
+            label: 'GitHub'
+          }
         ]}
       />
 
       <div>
         <Title>
           React Powered <Highlight>Component UI</Highlight>, accessible by
-          default and built on top of{" "}
-          <Highlight as="a" href="https://www.radix-ui.com/" target="_blank">
+          default and built on top of{' '}
+          <Highlight as='a' href='https://www.radix-ui.com/' target='_blank'>
             Radix
           </Highlight>
           .
@@ -67,7 +67,7 @@ function App() {
             isClicked={isCopyClicked}
             onClick={() => {
               setIsCopyClicked(true);
-              navigator.clipboard.writeText("pnpm i @snowye-ui/react");
+              navigator.clipboard.writeText('pnpm i @snowye-ui/react');
             }}
           >
             Copy {isCopyClicked && <Check size={18} />}

@@ -1,4 +1,4 @@
-import { Box } from "@snowye-ui/react";
+import { Box } from '@snowye-ui/react';
 
 interface Props {
   css?: any;
@@ -8,19 +8,19 @@ interface Props {
 export const HeroContainer = ({ css, children }: Props) => {
   return (
     <Box
-      role="presentation"
+      role='presentation'
       css={{
-        backgroundColor: "#1a1a1a",
-        position: "relative",
-        display: "flex",
-        alignItems: "flex-start",
-        justifyContent: "center",
-        padding: "100px 0",
-        borderTopLeftRadius: "$md",
-        borderTopRightRadius: "$md",
+        backgroundColor: '#1a1a1a',
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        padding: '100px 0',
+        borderTopLeftRadius: '$md',
+        borderTopRightRadius: '$md',
         border: 0,
-        marginTop: "$2",
-        ...(css as any),
+        marginTop: '$2',
+        ...(css as any)
       }}
     >
       {children}

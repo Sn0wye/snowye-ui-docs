@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write --plugin-search-dir=. **/*.{cjs,mjs,ts,tsx}",
-    "lint": "eslint src --ext .ts.tsx"
+    "format": "prettier --write --plugin-search-dir=. **/*.{cjs,mjs,ts,tsx}"
   },
   "repository": {
     "type": "git",
@@ -37,7 +36,6 @@
     "@sn0wye/eslint-config": "^1.8.1",
     "@types/node": "18.11.10",
     "@types/react": "18.0.26",
-    "eslint": "^8.29.0",
     "typescript": "^4.9.3"
   }
 }

@@ -2,6 +2,7 @@ import { AccessibleIcon } from '@radix-ui/react-accessible-icon';
 import { Box, IconButton, Popover, Text } from '@snowye-ui/react';
 import { Info } from 'phosphor-react';
 import { styled } from '../../styles/stitches';
+import { Code } from '../Code';
 import { DividerHorizontalIcon } from './DividerHorizontal';
 import { RegionTable } from './RegionTable';
 
@@ -11,32 +12,6 @@ const Td = styled('td', {
   pr: '$4',
   whiteSpace: 'nowrap',
   height: 56
-});
-
-export const Code = styled('code', {
-  fontFamily: 'Fira Code',
-  fontSize: '$md',
-  whiteSpace: 'nowrap',
-  padding: '0 3px 2px 3px',
-  borderRadius: 0,
-  margin: 0,
-  height: '$6',
-
-  variants: {
-    variant: {
-      gray: {
-        backgroundColor: '$gray800',
-        color: '$gray400'
-      },
-      violet: {
-        backgroundColor: '#251e40',
-        color: '#9e8cfc'
-      }
-    }
-  },
-  defaultVariants: {
-    variant: 'violet'
-  }
 });
 
 type Data = {

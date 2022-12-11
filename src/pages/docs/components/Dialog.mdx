@@ -118,39 +118,11 @@ The button that opens the dialog.
 <PropsTable
   data={[
     {
-      name: 'asChild',
+      name: 'children',
       required: false,
-      type: 'boolean',
-      default: 'false',
+      type: 'ReactNode',
       description:
-        'Change the component to the HTML tag or custom component of the only child. This will merge the original component props with the props of the supplied element/component and change the underlying DOM node.',
-    },
-  ]}
-/>
-
-### Portal
-
-When used, portals your overlay and content parts into the `body`.
-
-<PropsTable
-  data={[
-    {
-      name: 'forceMount',
-      type: 'boolean',
-      description: (
-        <span>
-          Used to force mounting when more control is needed. Useful when
-          controlling animation with React animation libraries. If used on this
-          part, it will be inherited by <Code>Dialog.Overlay</Code> and{' '}
-          <Code>Dialog.Content</Code>.
-        </span>
-      ),
-    },
-    {
-      name: 'container',
-      type: 'HTMLElement',
-      default: 'document.body',
-      description: 'Specify a container element to portal the content into.',
+        'Any valid React Element.',
     },
   ]}
 />

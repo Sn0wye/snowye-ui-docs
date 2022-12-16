@@ -3,7 +3,7 @@
 ### Components
 
 - [x] IconButton
-- [ ] Loading
+- [x] Loading
 - [ ] MultiStep
 - [ ] Popover
 - [ ] TextArea

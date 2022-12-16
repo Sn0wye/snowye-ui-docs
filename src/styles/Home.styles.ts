@@ -101,12 +101,14 @@ export const Button = styled('button', {
   cursor: 'pointer',
   borderRadius: '5px',
   fontSize: '18px',
+  fontWeight: '$semibold',
   border: 0,
   height: '56px',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   textDecoration: 'none',
+  gap: '$2',
 
   variants: {
     variant: {

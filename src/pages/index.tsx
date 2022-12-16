@@ -1,11 +1,13 @@
 import Head from 'next/head';
+import { ArrowRight } from 'phosphor-react';
 import { useEffect, useState } from 'react';
+import { Github } from '../components/Github';
 import { Header } from '../components/Header';
 import {
   Button,
+  CTA,
   Card,
   Community,
-  CTA,
   Description,
   Highlight,
   Stats,
@@ -75,7 +77,7 @@ function App() {
 
         <CTA>
           <Button as='a' href='/docs/overview/getting-started'>
-            Get Started ➡
+            Get Started <ArrowRight size={20} weight='bold' />
           </Button>
           <Button
             as='a'
@@ -83,6 +85,7 @@ function App() {
             target='_blank'
             variant='secondary'
           >
+            <Github />
             GitHub
           </Button>
         </CTA>

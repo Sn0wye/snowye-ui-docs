@@ -1,14 +1,12 @@
 import Head from 'next/head';
-import { Check } from 'phosphor-react';
 import { useEffect, useState } from 'react';
 import { Header } from '../components/Header';
 import {
+  Button,
   Card,
-  Code,
   Community,
-  Copy,
+  CTA,
   Description,
-  Download,
   Highlight,
   Stats,
   Title,
@@ -62,7 +60,7 @@ function App() {
           Snowye UI is open source and made to be easy to use.
         </Description>
 
-        <Download>
+        {/* <Download>
           <Code>$ pnpm i @snowye-ui/react</Code>
           <Copy
             isClicked={isCopyClicked}
@@ -73,7 +71,21 @@ function App() {
           >
             Copy {isCopyClicked && <Check size={18} />}
           </Copy>
-        </Download>
+        </Download> */}
+
+        <CTA>
+          <Button as='a' href='/docs/overview/getting-started'>
+            Get Started ➡
+          </Button>
+          <Button
+            as='a'
+            href='https://github.com/Sn0wye/snowye-ui'
+            target='_blank'
+            variant='secondary'
+          >
+            GitHub
+          </Button>
+        </CTA>
 
         <Community>
           <h1>

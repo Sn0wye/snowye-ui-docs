@@ -7,16 +7,16 @@ export const Wrapper = styled('div', {
 export const Title = styled('h1', {
   textAlign: 'center',
   margin: '0 25%',
-  marginTop: '$12',
+  marginTop: '$20',
   marginBottom: '30px',
   fontSize: '40px',
 
   '@media (max-width: 500px)': {
-    margin: '$12 0'
+    margin: '$20 0'
   },
 
   '@media (max-width: 600px)': {
-    margin: '$12 $6'
+    margin: '$20 $6'
   }
 });
 
@@ -86,15 +86,61 @@ export const Copy = styled('button', {
   }
 });
 
+export const CTA = styled('div', {
+  display: 'flex',
+  gap: '1rem',
+  alignItems: 'center',
+  justifyContent: 'center',
+  mt: '$20'
+});
+
+export const Button = styled('button', {
+  padding: '$5 $7',
+  background: 'linear-gradient(135deg, #9942FE, #3378FF)',
+  color: '#fff',
+  cursor: 'pointer',
+  borderRadius: '5px',
+  fontSize: '18px',
+  border: 0,
+  height: '56px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textDecoration: 'none',
+
+  variants: {
+    variant: {
+      primary: {
+        '&:hover': {
+          transition: '0.2s',
+          opacity: '0.8'
+        }
+      },
+      secondary: {
+        background: '$gray700',
+
+        '&:hover': {
+          transition: '0.2s',
+          background: '$gray600'
+        }
+      }
+    }
+  },
+  defaultVariants: {
+    variant: 'primary'
+  }
+});
+
 export const Community = styled('div', {
-  marginTop: '$12',
+  marginTop: '$20',
   marginBottom: '$12',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 
   h1: {
-    marginBottom: '$8'
+    marginBottom: '$8',
+    textAlign: 'center'
   }
 });
 

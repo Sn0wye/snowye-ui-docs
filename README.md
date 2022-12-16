@@ -2,7 +2,7 @@
 
 ### Components
 
-- [ ] IconButton
+- [x] IconButton
 - [ ] Loading
 - [ ] MultiStep
 - [ ] Popover
@@ -15,7 +15,7 @@
 - [ ] Box
 - [ ] Surface
 
-### Text
+### Typography
 
 - [ ] Heading
 - [ ] Text

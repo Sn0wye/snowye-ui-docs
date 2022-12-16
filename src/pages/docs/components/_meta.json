@@ -1,0 +1,14 @@
+{
+  "Avatar": "Avatar",
+  "Button": "Button",
+  "Checkbox": "Checkbox",
+  "Dialog": "Dialog",
+  "Icon-Button": "IconButton",
+  "Loading": "Loading",
+  "Multi-Step": "MultiStep",
+  "Popover": "Popover",
+  "Text-Area": "TextArea",
+  "Text-Input": "TextInput",
+  "Toast": "Toast",
+  "Tooltip": "Tooltip"
+}

@@ -3,12 +3,12 @@
   "Button": "Button",
   "Checkbox": "Checkbox",
   "Dialog": "Dialog",
-  "Icon-Button": "IconButton",
+  "Icon-Button": "Icon Button",
   "Loading": "Loading",
-  "Multi-Step": "MultiStep",
+  "Multi-Step": "Multi Step",
   "Popover": "Popover",
-  "Text-Area": "TextArea",
-  "Text-Input": "TextInput",
+  "Text-Area": "Text Area",
+  "Text-Input": "Text Input",
   "Toast": "Toast",
   "Tooltip": "Tooltip"
 }

@@ -6,7 +6,7 @@
 - [x] Loading
 - [ ] MultiStep
 - [x] Popover
-- [ ] TextArea
+- [x] TextArea
 - [ ] Toast
 - [ ] Tooltip
 

@@ -5,7 +5,7 @@
 - [x] IconButton
 - [x] Loading
 - [ ] MultiStep
-- [ ] Popover
+- [x] Popover
 - [ ] TextArea
 - [ ] Toast
 - [ ] Tooltip

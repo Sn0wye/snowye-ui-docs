@@ -4,7 +4,7 @@
 
 - [x] IconButton
 - [x] Loading
-- [ ] MultiStep
+- [x] MultiStep
 - [x] Popover
 - [x] TextArea
 - [ ] Toast

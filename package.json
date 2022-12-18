@@ -21,7 +21,7 @@
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
     "@radix-ui/react-accessible-icon": "^1.0.1",
-    "@snowye-ui/react": "^1.7.0",
+    "@snowye-ui/react": "^1.8.0",
     "@snowye-ui/tokens": "^1.1.0",
     "@stitches/react": "^1.2.8",
     "next": "^13.0.6",

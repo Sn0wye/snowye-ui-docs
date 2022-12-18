@@ -4,7 +4,7 @@ specifiers:
   '@mdx-js/react': ^2.1.5
   '@radix-ui/react-accessible-icon': ^1.0.1
   '@sn0wye/eslint-config': ^1.8.1
-  '@snowye-ui/react': ^1.7.0
+  '@snowye-ui/react': ^1.8.0
   '@snowye-ui/tokens': ^1.1.0
   '@stitches/react': ^1.2.8
   '@types/node': 18.11.10
@@ -21,7 +21,7 @@ specifiers:
 dependencies:
   '@mdx-js/react': 2.1.5_react@18.2.0
   '@radix-ui/react-accessible-icon': 1.0.1_biqbaboplfbrettd7655fr4n2y
-  '@snowye-ui/react': 1.7.0_ib3m5ricvtkl2cll7qpr2f6lvq
+  '@snowye-ui/react': 1.8.0_ib3m5ricvtkl2cll7qpr2f6lvq
   '@snowye-ui/tokens': 1.1.0
   '@stitches/react': 1.2.8_react@18.2.0
   next: 13.0.6_iburw4xngv4nuxezlam7kbvdc4
@@ -879,8 +879,8 @@ packages:
       - ts-node
     dev: true
 
-  /@snowye-ui/react/1.7.0_ib3m5ricvtkl2cll7qpr2f6lvq:
-    resolution: {integrity: sha512-9PK8wXzra99aehQV7nsMeNEOmyGrfj4OJkIz+ClKkFjgVtufx7DCV54QAjBP+hPz+Dl81NNpXXe5/8r9RqIfpQ==}
+  /@snowye-ui/react/1.8.0_ib3m5ricvtkl2cll7qpr2f6lvq:
+    resolution: {integrity: sha512-ZxjHN9PK556ndlMbaWHPWTWITWWDOqrOPuTKmFMaLto1UuuwVmxmTRK9BfHkFzov5ogOAdT70h497JQoZDDliw==}
     dependencies:
       '@radix-ui/react-avatar': 1.0.1_biqbaboplfbrettd7655fr4n2y
       '@radix-ui/react-checkbox': 1.0.1_biqbaboplfbrettd7655fr4n2y
